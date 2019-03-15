@@ -1363,6 +1363,7 @@ body {
   min-height: 77px;
   transition: all .3s;
   background: #efefef;
+  background: none;
 }
 .cid-rkFUskRFa8 .navbar.opened {
   transition: all .3s;
