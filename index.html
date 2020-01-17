@@ -28,7 +28,7 @@
   
   
   <head>
-    <title>스토리그램</title>
+    <title>페이스그램</title>
     <meta property="og:url" content="http://facegram.co.kr">
     <meta property="og:title" content="페이스그램">  
     <meta property="og:type" content="website">
@@ -616,7 +616,7 @@
                 <div class="input-form pt-5">
                     <div class="form1" data-form-type="formoid">
                         <div data-form-alert="" hidden="">구독해주셔서감사합니다.</div>
-                        <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="ZybIYz9c9ShjRuIoNqDgacOxdwFBKOHqMY2SHGVxgASQ1pLXQqKwfbpxtZKoDAIxQ5s7CS9OPG2iE0XqHNiXUSwiQUw1ztna1MsZkk/HwFXSdA8s7dUH7c7iYoBWpas0">
+                        <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="NSOGPCNTmObJVXGP+2uZoptmamCCvlkHglQjPwcBNouIcfB20VsJP7WOcTCNN71ZEROzNpkpW0fh9yr8bvjY+0PE9S8blJkk328h7m4b+5VxBpNCWB8elIturXFGvBtx">
                               <input type="email" class="form-control input-sm input-inverse special-form" name="email" data-form-field="Email" placeholder="Your email" required="" id="email-form4-f">
                               <div class="mbr-section-btn input-group-btn">
                                    <button href="https://mobirise.com/" class="btn btn-black display-4" type="submit" role="button">SUBSCRIBE
@@ -847,7 +847,49 @@
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
   
-  
+  <!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var d = window.document;
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "e059aacf-9711-401d-b67a-51aa2d43afca"
+  });
+</script>
+<!-- End Channel Plugin -->
 <input name="cookieData" type="hidden" data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
   </body>
 </html>
